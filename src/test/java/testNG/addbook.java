@@ -37,6 +37,7 @@ public class addbook {
 		driver.findElement(By.id("gwt-uid-11")).sendKeys("a@gmail.com");
 		driver.findElement(By.id("gwt-uid-13")).sendKeys("07/7/93");
 		driver.findElement(By.xpath("//div[@class='v-button v-widget primary v-button-primary']")).click();
+	  System.out.println("completed");
 				
   }
 	
