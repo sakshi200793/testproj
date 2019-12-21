@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -15,9 +16,14 @@ public class addbook {
   @BeforeMethod
   public void launch() {
 	  System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-	  driver = new ChromeDriver();
+	  ChromeOptions options = new ChromeOptions();
+	    options.addArguments("--headless");
+	    
+		driver = new ChromeDriver(options);
+	 
+	  
 	  driver.manage().window().maximize();
-	  driver.get("http://104.154.146.231:32768/addressbook/");
+	  driver.get("http://35.192.40.33:32768/addressbook/");
 	  
   }
 	
