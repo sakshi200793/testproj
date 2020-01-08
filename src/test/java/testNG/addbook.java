@@ -23,7 +23,7 @@ public class addbook {
 	 
 	  
 	  driver.manage().window().maximize();
-	  driver.get("http://35.192.40.33:32768/addressbook/");
+	  driver.get("http://34.68.144.157:32768/addressbook/");
 	  
   }
 	
